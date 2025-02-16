@@ -1,15 +1,22 @@
 function guardarNombre() {
-    document.getElementById("nameButton").addEventListener("click", function(event) {
-        const user = document.getElementById("nombre_jugador").value.trim();
-        
-        if (user) {
-            localStorage.setItem("nombreUsuario", user);
-            window.location.href = "game.html";
-        } else {
-            alert("Por favor ingresa tu nombre para jugar.");
-        }
-    });
+    const boton = document.getElementById("nameButton");
+    if (boton) {
+        boton.addEventListener("click", function(event) {
+            const user = document.getElementById("nombre_jugador").value.trim();
+            
+            if (user) {
+                localStorage.setItem("nombreUsuario", user);
+                window.location.href = "game.html";
+            } else {
+                alert("Por favor ingresa tu nombre para jugar.");
+            }
+        });
+    } else {
+        console.error("Error: No se encontró el botón 'nameButton'");
+    }
 }
+
+document.addEventListener("DOMContentLoaded", guardarNombre);
 
 function mostrarPopUp() {
     document.getElementById("popUp1").classList.add("open-popUp1");
