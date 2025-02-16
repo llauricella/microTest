@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" type="text/javascript" defer></script>
+    <title>Game</title>
+    <button style="font-size:24px;width:auto;position:absolute;left:25px;" onclick="irAtras()"><i class="fa fa-angle-left"></i></button>
+    
+</head>
+<body>
+    
+    <div class="back"></div>
+    <div class="title">SIMON <span style="color: #ff6961;">S</span><span style="color: #83ebf2;">A</span><span style="color: #80ef80;">Y</span><span style="color: #fdfd96;">S</span></div>
+    <div class="game">
+        <div id="round" style="color: whitesmoke;"></div>
+        <div class="buttonContainer">
+            <div class="square Red"></div>
+            <div class="square Yellow"></div>
+            <div class="square Blue"></div>
+            <div class="square Green"></div>        
+        </div>
+    </div>
+    <div class="popUp2" id="popUp2">
+        <div class="text" style="color: #222021;">PERDISTE!</div>
+    </div>
+    <div class="popUp3" id="popUp3">
+        <div class="text" style="color: #222021;">GANASTE!</div>
+    </div>
+    <button id="startButton">Empezar</button>
+    
+</body>
+</html>

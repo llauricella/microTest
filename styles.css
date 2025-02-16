@@ -1,0 +1,165 @@
+header {
+    display: flex;
+    flex-direction: row;
+    place-items: left;
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    width: 100%;
+    background-color: #222021;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    color: #222021;
+    margin: 10px 30px;
+}
+
+.popUp1 {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    scale: 0.1;
+    visibility: hidden;
+}
+
+.open-popUp1 {
+    visibility: visible;
+    scale: 1;
+}
+
+.popUp2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #ff6961;
+    border-radius: 5px;
+    top: 50%;
+    position: absolute;
+    text-align: center;
+    scale: 0.1;
+    visibility: hidden;
+}
+
+.open-popUp2 {
+    visibility: visible;
+    scale: 6;
+}
+
+.popUp3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #80ef80;
+    border-radius: 5px;
+    top: 50%;
+    position: absolute;
+    text-align: center;
+    scale: 0.1;
+    visibility: hidden;
+}
+
+.open-popUp3 {
+    visibility: visible;
+    scale: 6;
+}
+
+.text {
+    padding: 30px 30px 30px 30px;
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+button {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    width: 200px;
+    border-radius: 10px;
+    border-color: whitesmoke;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #222021;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.game {
+    position: relative;
+    margin: 50px;
+    padding-bottom: 50px;
+    border-radius: 5px;
+}
+
+.title {
+    place-self: center;
+    font-size: 42px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    padding: 50px;
+}
+
+.square {
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.square:active,
+.active {
+    filter: brightness(120%);
+}
+
+.Red {
+    background-color: #ff6961;
+}
+.Blue {
+    background-color: #83ebf2;
+}
+.Green {
+    background-color: #80ef80;
+}
+.Yellow {
+    background-color: #fdfd96;
+}
+
+.buttonContainer {
+    display: inline-grid;
+    grid-gap: 15px;
+    grid-template-columns: auto auto;
+    transform: rotate(45deg);
+}
+
+.grid {
+    display: inline-block;  
+}
+
+.flex-grid {
+    display: grid;
+    margin: 80px auto;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.grid-item {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #222021;
+    background-color: whitesmoke;
+}
+
+.header {
+    font-weight: bold;
+    background-color: #ddd;
+}
