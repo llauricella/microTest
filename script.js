@@ -193,9 +193,6 @@ const simon = new Simon(round, simonButtons, startButton);
     }
 })();
 
-function reiniciar() {
-    simon.init();
-}
-
+document.addEventListener("DOMContentLoaded", guardarNombre);
 
 
